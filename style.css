@@ -1,0 +1,192 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#hero {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    animation: none !important;
+    background: none !important;
+}
+
+.hero-text a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+}
+
+.hero-text a:hover {
+    color: #3498db;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+section {
+    background-color: #333;
+    padding: 20px 0;
+    margin: 10px 0;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#hero:hover {
+    background: none !important;
+    transform: none !important;
+}
+
+section:hover {
+    background: linear-gradient(to right, #3A4ECC, #75D9FA);
+    transform: scale(1.05);
+    color: #000;
+}
+
+section h2,
+.education-item,
+.skills li,
+.experience-item {
+    color: #e0e0e0;
+    transition: color 0.3s ease-in-out;
+}
+
+section:hover h2,
+section:hover .education-item,
+section:hover .skills li,
+section:hover .experience-item {
+    color: #000;
+}
+
+.education-item,
+.skills li {
+    margin: 5px 0;
+    border-bottom: 1px solid #333;
+}
+
+.education-item:last-child,
+.skills li:last-child {
+    border-bottom: none;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.skills li:hover {
+    background-color: #4568dc;
+}
+
+.experience-item {
+    color: #e0e0e0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.project-item {
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px 0;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+}
+
+.project-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to right, #0b0742 , #120c6e);
+}
+
+.project-item h3,
+.project-item p {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.project-item:hover h3,
+.project-item:hover p {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+footer {
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 0.8em;
+    background-color: #1a1a1a;
+    padding: 20px 0;
+}
+
+#toggleProjectsBtn {
+    background: linear-gradient(to right, #0b0742 , #120c6e);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+#toggleProjectsBtn:hover {
+    background: linear-gradient(to right,#120c6e , #0b0742 );
+}

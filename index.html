@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Titiksha Bhavsar - Portfolio</title>
+    <style>
+        nav.navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav.navbar li {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="hero" class="centered-section active">
+        <div class="container">
+            <div class="hero-content">
+                <img src="./me.jpg" alt="Your Profile Picture" class="profile-picture">
+                <div class="hero-text">
+                    <h1>Titiksha Bhavsar</h1><br>
+                    <nav class="navbar">
+                        <ul>
+                            <!-- <li><a href="#hero">Home</a></li> -->
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="centered-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm Titiksha, a frontend developer skilled in HTML, CSS, JS, and ReactJS. With contributions to various projects, I emphasize clean and efficient code for user-centric experiences. Open to professional connections and opportunities for collaboration.</p>
+        </div>
+    </section>
+
+    <section id="education" class="centered-section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <p>• Bachelor of Technology in Computer Engineering | K J Somaiya Institute of Technology |  Mumbai, Maharashtra	| CGPA:  9.7 | 2026(Expected)<br>                              		         
+                    • XII (HSC) | K.M. Agrawal College | Kalyan, Maharashtra | 72.5% | 2022  <br>
+                    • X (ICSE) | Podar International School | Kalyan, Maharashtra | 93.2% | 2020
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="centered-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience" class="centered-section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <p>Training | Coincent | Mumbai, Maharashtra | March 2023 - May 2023<br>
+                    • Actively participated in a Data Science with Python training program, gaining practical experience in applying algorithms to real-world datasets.<br>
+                    • Completed a practical project as part of the training program.           
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="centered-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <button id="toggleProjectsBtn" onclick="toggleProjects()">View Projects</button>
+            <div class="project-grid" id="projectGrid">
+                <div class="project-item">
+                    <div class="project-content">
+                        <h3>Responsive Landing Page</h3>
+                        <p>Description: The project involved creating a responsive landing page with dynamic color/style changes upon scrolling or hovering.</p>
+                        <a href="https://github.com/titiksha62/PRODIGY_WD_01" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-content">
+                        <h3>Stopwatch Web Application</h3>
+                        <p>Description: Involved building a stopwatch web application with start, pause, and reset features.</p>
+                        <a href="https://github.com/titiksha62/PRODIGY_WD_02" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-content">
+                        <h3>Tic-Tac-Toe Web Application</h3>
+                        <p>Description: Involved functions to handle user clicks, track game state, and check for winning conditions.</p>
+                        <a href="https://github.com/titiksha62/PRODIGY_WD_03" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Description: Showcases my skills, projects, and accomplishments as a web developer. It has an attractive and visually appealing layout that captures viewers' attention.</p>
+                        <a href="#" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-content">
+                        <h3>Weather App</h3>
+                        <p>Description: A webpage that fetches weather data from a weather API based on the user's location or user-inputted location. It displays the current weather conditions and the temperature.</p>
+                        <a href="#" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="centered-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Connect with me on:</p>
+            <ul>
+                <li><a href="https://github.com/titiksha62" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/titikshabhavsar/" target="_blank">LinkedIn</a></li>
+                <li>Email: <a href="mailto:titikshabhavsar@gmail.com">titikshabhavsar@gmail.com</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="centered-section">
+        <div class="container">
+            <p>&copy; 2023 Titiksha Bhavsar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
